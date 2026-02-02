@@ -1,0 +1,50 @@
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-272px * 50));
+  }
+}
+
+.infinite-scroll {
+  animation: infiniteScroll 240s linear infinite;
+}
+
+.infinite-scroll.paused {
+  animation-play-state: paused;
+}
+
+.infinite-scroll {
+  cursor: grab;
+}
+
+.infinite-scroll.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+/* University Carousel Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.animate-scroll-fast {
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

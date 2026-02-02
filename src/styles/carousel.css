@@ -1,0 +1,54 @@
+/* Custom React Slick Carousel Styles for Oxbridge International School */
+
+/* Customize slick dots */
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: #2A4578 !important;
+  opacity: 0.3 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #FCDA49 !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li button:hover:before {
+  color: #AD2D32 !important;
+  opacity: 0.7 !important;
+}
+
+/* Arrow customization */
+.slick-prev,
+.slick-next {
+  z-index: 10;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #2A4578 !important;
+  opacity: 0.7 !important;
+}
+
+.slick-prev:hover:before,
+.slick-next:hover:before {
+  color: #AD2D32 !important;
+  opacity: 1 !important;
+}
+
+.slick-slide {
+  padding: 0 !important;
+}
+
+/* Ensure smooth transitions */
+.slick-track {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
+.slick-slide > div {
+  height: 100%;
+}

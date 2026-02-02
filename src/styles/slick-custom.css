@@ -1,0 +1,75 @@
+/* Custom Slick Carousel Overrides - Removes missing font/image references */
+
+/* Override slick loader to use CSS spinner instead of missing gif */
+.slick-loading .slick-list {
+  background: #fff;
+}
+
+.slick-loading .slick-list:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  margin: -10px 0 0 -10px;
+  border: 2px solid #ccc;
+  border-top-color: #000;
+  border-radius: 50%;
+  animation: slick-spin 0.6s linear infinite;
+}
+
+@keyframes slick-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Override slick arrows to use Unicode arrows instead of missing font */
+.slick-prev:before,
+.slick-next:before {
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 1;
+  opacity: 0.75;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev:before {
+  content: '←';
+}
+
+[dir='rtl'] .slick-prev:before {
+  content: '→';
+}
+
+.slick-next:before {
+  content: '→';
+}
+
+[dir='rtl'] .slick-next:before {
+  content: '←';
+}
+
+/* Dots - use CSS circles instead of missing font */
+.slick-dots li button:before {
+  font-family: inherit;
+  content: '•';
+  font-size: 24px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  opacity: 0.25;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #000;
+}

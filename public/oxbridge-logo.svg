@@ -1,0 +1,36 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="40" y1="5" x2="40" y2="75" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#293863"/>
+      <stop offset="100%" stop-color="#33559a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield shape -->
+  <path d="M40 5 L70 15 L70 35 C70 55 55 70 40 75 C25 70 10 55 10 35 L10 15 Z" fill="url(#shieldGradient)" stroke="#953130" stroke-width="2"/>
+  
+  <!-- Open book - left page -->
+  <path d="M28 25 L40 23 L40 50 L28 52 Z" fill="#f8eb78" opacity="0.9"/>
+  
+  <!-- Open book - right page -->
+  <path d="M52 25 L40 23 L40 50 L52 52 Z" fill="#f7d454" opacity="0.9"/>
+  
+  <!-- Book binding -->
+  <line x1="40" y1="23" x2="40" y2="50" stroke="#293863" stroke-width="2"/>
+  
+  <!-- Page lines left -->
+  <line x1="30" y1="30" x2="38" y2="29.5" stroke="#33559a" stroke-width="0.8" opacity="0.5"/>
+  <line x1="30" y1="34" x2="38" y2="33.5" stroke="#33559a" stroke-width="0.8" opacity="0.5"/>
+  <line x1="30" y1="38" x2="38" y2="37.5" stroke="#33559a" stroke-width="0.8" opacity="0.5"/>
+  <line x1="30" y1="42" x2="38" y2="41.5" stroke="#33559a" stroke-width="0.8" opacity="0.5"/>
+  
+  <!-- Page lines right -->
+  <line x1="42" y1="29.5" x2="50" y2="30" stroke="#33559a" stroke-width="0.8" opacity="0.5"/>
+  <line x1="42" y1="33.5" x2="50" y2="34" stroke="#33559a" stroke-width="0.8" opacity="0.5"/>
+  <line x1="42" y1="37.5" x2="50" y2="38" stroke="#33559a" stroke-width="0.8" opacity="0.5"/>
+  <line x1="42" y1="41.5" x2="50" y2="42" stroke="#33559a" stroke-width="0.8" opacity="0.5"/>
+  
+  <!-- Letter O -->
+  <circle cx="40" cy="36" r="9" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.95"/>
+  <circle cx="40" cy="36" r="6.5" fill="none" stroke="#953130" stroke-width="1" opacity="0.8"/>
+</svg>
